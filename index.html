@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,16 +19,24 @@
                 <img src="./images/logo.png" alt="">
                 <h2>Medifit</h2>
             </div>
-            <div>
+            <div id="nav-links">
                 <a href="">Home</a>
                 <a href="">Shop</a>
                 <a href="">Page</a>
                 <a href="">About</a>
                 <a href="">Contact</a>
             </div>
-            <div>
-                <a class="" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-               <a href=""><i class="fa-brands fa-shopify"></i></a>
+            <div class="nav-right">
+                <!-- search Ber -->
+                <div class="search-container">
+                    <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchInput" type="text" placeholder="Search..." />
+                </div>
+
+                <!-- card -->
+                <a href=""><i class="fa-brands fa-shopify"></i></a>
+                <!-- hambarger -->
+                <i id="mobile-menu-btn" class="fa-solid fa-bars mobile-menu-btn"></i>
             </div>
         </nav>
 
@@ -35,7 +45,7 @@
             <div>
                 <h1>Your trusted <br>care now <br>and always </h1>
                 <p>For the best results, align your health needs with your medication plan.</p>
-                <button><img src="./images/Shopping_bag_logo.png" alt="">Shop Now</button>
+                <button id="shopNowBtn"><img src="./images/Shopping_bag_logo.png" alt="">Shop Now</button>
             </div>
             <div>
                 <img src="./images/banner_image.png" alt="">
@@ -44,7 +54,8 @@
     </header>
 
     <main id="bg-color">
-        <section>
+        <!-- section-1 Shop Category -->
+        <section id="section-1">
             <h2 class="section-1-h2">Shop by Category</h2>
 
             <div class="card-containers">
@@ -55,12 +66,12 @@
                 </div>
                 <div class="card-item">
                     <img src="./images/heath_logo.png" alt="">
-                    <h4>Medicin</h4>
+                    <h4>Health care</h4>
                     <p>32 Item</p>
                 </div>
                 <div class="card-item">
                     <img src="./images/fitness_logo.png" alt="">
-                    <h4>Medicin</h4>
+                    <h4>Beauty Care</h4>
                     <p>32 Item</p>
                 </div>
                 <div class="card-item">
@@ -70,20 +81,20 @@
                 </div>
                 <div class="card-item">
                     <img src="./images/medical-mask.png" alt="">
-                    <h4>Medicin</h4>
+                    <h4>Fitness</h4>
                     <p>32 Item</p>
                 </div>
                 <div class="card-item">
                     <img src="./images/beauty_logo.png" alt="">
-                    <h4>Medicin</h4>
+                    <h4>Medkits</h4>
                     <p>32 Item</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section-2 -->
+        <!-- Section-2 Card -->
 
-        <section>
+        <section id="Section-2">
             <div class="section-2-containers">
                 <div class="section-2-card">
                     <div>
@@ -98,7 +109,7 @@
                 <div class="section-2-card">
                     <div>
                         <button>Senitizer</button>
-                        <h3>Hand sanitizer</h3>
+                        <h3>Face_wash</h3>
                         <a href="">Shop Now</a>
                     </div>
                     <div>
@@ -108,7 +119,7 @@
                 <div class="section-2-card">
                     <div>
                         <button>Senitizer</button>
-                        <h3>Hand sanitizer</h3>
+                        <h3>Medical-mask</h3>
                         <a href="">Shoe Now</a>
                     </div>
                     <div>
@@ -118,34 +129,35 @@
 
             </div>
         </section>
-        <!-- section-3 -->
+
+        <!-- section-3 Lates health product -->
         <section id="section-3">
             <h1>Latest health product</h1>
             <div class="section-3-containers">
-                <div class="section-3-item">
+                <div class="section-3-item" data-name="Microscope">
                     <img src="./images/microscope.png" alt="">
                     <h4>Microscope</h4>
                     <p>$ 45.00 USD</p>
                 </div>
-                <div class="section-3-item">
+                <div class="section-3-item" data-name="vitamin_serum">
                     <img src="./images/oximeter.png" alt="">
-                    <h4>Microscope</h4>
+                    <h4>vitamin_serum</h4>
                     <p>$ 45.00 USD</p>
                 </div>
-                <div class="section-3-item">
+                <div class="section-3-item" data-name="Pulse oximeter">
                     <img src="./images/vitamin_serum.png" alt="">
-                    <h4>Microscope</h4>
+                    <h4>Pulse oximeter</h4>
                     <p>$ 45.00 USD</p>
                 </div>
-                <div class="section-3-item">
+                <div class="section-3-item" data-name="high_protein">
                     <img src="./images/high_protein .png" alt="">
-                    <h4>Microscope</h4>
+                    <h4>high protein</h4>
                     <p>$ 45.00 USD</p>
                 </div>
             </div>
         </section>
 
-        <!-- section-4 -->
+        <!-- section-4 Our Client-->
         <section id="section-4">
             <h1>Our happy clients</h1>
             <p>I’m so impressed with this online medical store. The product selection is extensive and the prices are
@@ -153,7 +165,7 @@
                 the items arrived in perfect condition. Plus, the customer service team was incredibly helpful.</p>
         </section>
 
-        <!-- section-5 -->
+        <!-- section-5  -->
         <section id="section-5">
             <div class="section-5-card-containers">
                 <div class="section-5-card">
@@ -187,7 +199,7 @@
             </div>
         </section>
     </main>
-   <footer class="footer" id="contact">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -237,6 +249,7 @@
             </div>
         </div>
     </footer>
+    <script src="/index.js"></script>
 
 </body>
 
