@@ -50,3 +50,5 @@ searchIcon?.addEventListener('click', () => {
   if (searchInput.classList.contains('active')) searchInput.focus();
   else if (searchInput.value) searchProduct();
 });
+
+
